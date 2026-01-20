@@ -31,10 +31,10 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Calculemos el área del rectángulo");
-                    double base = obtenerDouble(scanner, "Ingresa el valor de tu base: ");
-                    double altura = obtenerDouble(scanner, "Ingresa la altura: ");
+                    double base = obtenerDouble(scanner, "Ingresa el valor de tu base en cm: ");
+                    double altura = obtenerDouble(scanner, "Ingresa la altura en cm: ");
                     double area = calculararea(altura, base);
-                    System.out.println("El área del rectángulo es: "+area);
+                    System.out.println("El área del rectángulo es: "+area+"cm");
                     break;
                 case 3:
                     System.out.println("Convirtamos Fahereinthait");
@@ -44,9 +44,9 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Calculemos el área del círculo");
-                    double radio = obtenerDouble(scanner,"Ingresa el radio: ");
+                    double radio = obtenerDouble(scanner,"Ingresa el radio en cm: ");
                     double areaC = areacirculo(radio, CONSTANTE_PI);
-                    System.out.println("EL área de tu círculo es:"+areaC);
+                    System.out.println("EL área de tu círculo es:"+areaC+"cm");
                     break;
                 case 5:
                     System.out.println("Cerraste el programa");
