@@ -59,10 +59,10 @@ public class Main {
         }
 
     /**
-     * metodo guardar los doubles en una variable
+     * metodo para guardar los doubles en una variable
      * @param sc Guarda y combierte la variable en valor double
      * @param mensaje nos permite decirle al usuario de que queremos el dato
-     * @return lo guarda
+     * @return lo convierte en un double listo para usarse
      */
         public static double obtenerDouble(Scanner sc, String mensaje){
             System.out.println(mensaje);
@@ -70,18 +70,18 @@ public class Main {
         }
 
     /**
-     * Metodo para calcular IMC
-     * @param PesoKg
-     * @param Alturam
-     * @return Muestra el IMC al usuario
+     * Metodo para calcular IMC a partir del peso y altura que proporcione el usuario
+     * @param PesoKg Este dato es ingresado por el usuario en kilogramos
+     * @param Alturam Este dato es ingresado por el usuario expresado en metros
+     * @return Muestra el IMC calculado al usuario
      */
     public static double calcularIMC(double PesoKg, double Alturam){
         return PesoKg/(Alturam*Alturam);
     }
 
-    /**Metodo de clasificacion
-     * @param imc evalua en donde entra ese IMC
-     * @return devulve la clasificacion al IMC
+    /**Metodo de clasificacion del IMC
+     * @param imc Este dato sera evaluado con los estandares que previamente habiamos asignado
+     * @return devulve un mensaje con la clasificacion del IMC
      */
     public static String obtenerClasificacion(double imc){
         if(imc<RANGO_BAJO) return "Bajo peso";
@@ -91,29 +91,29 @@ public class Main {
     }
 
     /**
-     * Metodo para calcular el area de un rectangulo
-     * @param base
-     * @param altura
-     * @return muestra la altura
+     * Metodo para calcular el area de un rectangulo con una base y una altura
+     * @param base la base nos la brinda el usuario en cm, es fundamental para la operacion
+     * @param altura la altura nos la brinda el usuario en cm
+     * @return muestra el area calculada con los datos prporcionados por el usuario
      */
     public static double calculararea(double base, double altura){
         return base*altura;
     }
     /**Metodo para convertir grados celcius a Farenheit
-     * @param celcius
-     * @param VALOR_CAMBIO es parte de la formula global 3/2= 1.8
-     * @param CONSTANTE_F parte de la formula global
-     * @return muestra los grados en Farenhait
+     * @param celcius Celcios es un dato que le solicitamos al usiario y usaremos en la conversion
+     * @param VALOR_CAMBIO es parte de la formula global 3/2= 1.8, este valor no pude ser modificado
+     * @param CONSTANTE_F parte de la formula global es la sumatoria final para la equivalencia
+     * @return muestra los grados celcius que quiere convertir y los grados ya convertios en Farenhait
      */
     public static double converirgrados(double celcius, double VALOR_CAMBIO, double CONSTANTE_F){
         return (celcius*VALOR_CAMBIO) +CONSTANTE_F;
     }
 
     /**
-     * Metodo para el area del circulo
-     * @param radio
-     * @param CONSTANTE_PI El valor que usamos de pi 3.1416
-     * @return devuelve el area
+     * Metodo para calcular el area de un circulo
+     * @param radio el radio nos lo brinda el usuario en cm
+     * @param CONSTANTE_PI El valor de pi el cual es una constante en este proceso
+     * @return devuelve el area del circulo en centimetros cubicos
      */
     public static double areacirculo(double radio, double CONSTANTE_PI){
         return (radio*radio)*CONSTANTE_PI;
