@@ -2,12 +2,15 @@ import java.util.Scanner;
 public class ActividadIfElseTarifa {
     /**
      * Asignacion de variables para eliminar números magicos.
-     * NIÑO: se le asigna un valor de 12 como limite para cobrar una tarifa de 50.
+     * EDAD_NIÑO: se le asigna un valor de 12 años.
+     * TARIFA_NIÑO: Tarifaa minima por la edad.
      * ADULTO: se le asigna un valor de 17 años como limite antes de reconocer como adulto.
-     * NOEXISTE: No hay usuario existente con una edad menor a 0.
-     * IMPOSIBLE: No hay usuario con una edad mayor a esa.
-     * ESTUDIANTE: Al ser estudiante la tarifa es menor acorde a la edad.
-     * NOESTUDIANTE: Al no ser estudiante la tarifa aumenta respecto a la edad.
+     * EDAD_MINIMA: No hay usuario existente con una edad menor a 0.
+     * EDAD_MAXIMA: No hay usuario con una edad mayor a esa.
+     * TARIFA_ESTUDIANTE: Al ser estudiante la tarifa es menor acorde a la edad.
+     * TARIFA_NOESTUDIANTE: Al no ser estudiante la tarifa aumenta respecto a la edad.
+     * TARIFA_UNIVERSITARIO: Una tarifa equlibrada entre edad y estudiante.
+     * TARIFA_NOUNIVERSITARIIO: Mayor tarifa al ser adulto y no ser estudiante.
      * */
     public static int EDAD_NIÑO = 12;
     public static int TARIFA_NIÑO = 50;
@@ -37,7 +40,8 @@ public class ActividadIfElseTarifa {
 
         System.out.println("--------------------------------------------");
         System.out.println("Tu edad es de: "+ edad+ " años.");
-        System.out.println(esEstudiante? "si":"No"+ "Eres estudiante");
+        System.out.println("Eres estudiante: ");
+        System.out.println(esEstudiante? "si":"No" );
         System.out.println("Tu tarifa es de: "+ TARIFA_FINAL);
 
          }
