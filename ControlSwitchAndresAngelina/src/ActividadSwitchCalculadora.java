@@ -57,8 +57,8 @@ public class ActividadSwitchCalculadora {
         }
 
     /**
-     * Metodo que nos permite solicitar al usuario las valabras y las almacena como decimal.
-     * @param scanner las guarda en decial
+     * Metodo que nos permite solicitar al usuario los valores y las almacena como decimal.
+     * @param scanner las guarda en decimal
      * @param mensaje nos permite introducir un mensaje el cual el usuario leera.
      * @return lo guardamos
      */
@@ -73,9 +73,9 @@ public class ActividadSwitchCalculadora {
 
     /**
      * Metodos para calcular cada peticion, suma, resta, multiplicacion y division.
-     * @param variableA primer digito que nos da el usuario y el cul usaremos para las operaciones.
+     * @param variableA primer digito que nos da el usuario y el cual usaremos para las operaciones.
      * @param variableB segund digito el cual usamos en las operaciones.
-     * @return Devulve el resultado final de cada operacion.
+     * @return Devuelve el resultado final de cada operacion.
      */
         public static double obtenerSuma(double variableA, double variableB){
             return variableA+variableB;
