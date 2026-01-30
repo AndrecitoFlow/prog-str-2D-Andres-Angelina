@@ -20,25 +20,25 @@ public class ActividadSwitchCalculadora {
                 double VariableB = obtenerVaribleB(scanner, "Ingresa el segundo digito:");
                 switch (opcion){
                     case 1:
-                        System.out.println("Sumemos, dime que quieres sumar:");
+                        System.out.println("Sumemos:");
                         double RESULTADO_SUMA = obtenerSuma(VariableA,VariableB);
                         System.out.println("Digito1: "+ VariableA+" Digito2: "+VariableB);
                         System.out.println("El total de la suma es:"+ RESULTADO_SUMA);
                         break;
                     case 2:
-                        System.out.println("Restemos, dime que quieres restar:");
+                        System.out.println("Restemos:");
                         double RESULTADO_RESTA = obtenerResta(VariableA,VariableB);
                         System.out.println("Digito1: "+VariableA+" Digito2: "+VariableB);
                         System.out.println("El total de la resta es: "+RESULTADO_RESTA);
                         break;
                     case 3:
-                        System.out.println("Multipliquemos, dime que quieres multiplicar:");
+                        System.out.println("Multipliquemos:");
                         double RESULTADO_MULTIPLICACION = obtenerMultiplicacion(VariableA,VariableB);
                         System.out.println("Digito1: "+VariableA+" Digito2: "+VariableB);
                         System.out.println("El total de la multiplicación es: "+RESULTADO_MULTIPLICACION);
                         break;
                     case 4:
-                        System.out.println("Dividamos, dime que quieres dividir:");
+                        System.out.println("Dividamos:");
                         System.out.println("Ojo!, si tu segundo digito es 0 no se podra ejecutar");
                         if (VariableB==0){
                             System.out.println("No se puede dividr entre cero");
